@@ -5,7 +5,7 @@ import { HiDotsVertical } from 'react-icons/hi';
 import HeaderItem from './HeaderItem';
 import profile from "./../assets/Images/profile.png"
 function Header() {
-  const[toggle,settoggle]=useState('false')
+  const[toggle,settoggle]=useState(false)
   const menu = [
     {
       name: 'HOME',
@@ -56,7 +56,7 @@ function Header() {
 
         </div>
       </div>
-      <img src={profile} className='w-[40px]  rounded-full' />
+      <img src={profile} className='w-[40px]  hidden md:block rounded-full' />
     </div>
   )
 }

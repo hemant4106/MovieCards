@@ -40,17 +40,17 @@ function ProductionHouse() {
 
     ]
     return (
-        <div className='flex w-[100%] items-center gap-5'>
+        <div className='flex w-[fit] justify-center items-center gap-5 flex-wrap'>
             {productionHouseList.map((item) => (
                 <div  className='border-[2px] border-gray-600
-            rounded-lg hover:scale-110 transition-all duration-300
-            ease-in-out cursor-pointer relative shadow-lg
-            shadow-black m-5
+            rounded-md   hover:scale-110 transition-all duration-300
+            ease-in-out cursor-pointer relative shadow-lg 
+            shadow-black m-5 w-[30vw] md:w-[15vw] lg:w-[15vw] 
             ' >
                     <video src={item.video} autoPlay loop playsInline muted 
             className='absolute z-0  top-0 rounded-md 
-            opacity-0 hover:opacity-100' />
-                    <img src={item.image} className='w-full z-[1] opacity-100' />
+            opacity-0 hover:opacity-100 w-full h-full'  />
+                    <img src={item.image} className='z-[1] w-full h-full object-cover opacity-100 rounded-md'  />
 
                 </div>
             ))}
